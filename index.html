@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tree Map Diagram</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/treemap-favicon.png"
+      type="image/png"
+    />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+    <h1 id="title">Highest Grossing Movies of All Time</h1>
+    <h3 id="description">
+      Top Grossing Movies of Different Genres
+    </h3>
+    <div id="tooltip"></div>
+    <svg id="canvas"></svg>
+
+    <svg id="legend">
+      <g>
+        <rect x="10" y="0" width="40" class="legend-item" height="40" fill="crimson"></rect>
+        <text x="60" y="20" fill="#333">Action</text>
+      </g>
+
+      <g>
+        <rect x="10" y="40" width="40" class="legend-item" height="40" fill="#800020"></rect>
+        <text x="60" y="60" fill="#333">Drama</text>
+      </g>
+      <g>
+        <rect x="10" y="80" width="40" class="legend-item" height="40" fill="#50C878"></rect>
+        <text x="60" y="100" fill="#333">Adventure</text>
+      </g>
+      <g>
+        <rect x="10" y="120" width="40" class="legend-item" height="40" fill="#000080"></rect>
+        <text x="60" y="140" fill="#333">Family</text>
+      </g>
+      <g>
+        <rect x="10" y="160" width="40" class="legend-item" height="40" fill="#e0115f"></rect>
+        <text x="60" y="180" fill="#333">Animation</text>
+      </g>
+      <g>
+        <rect x="10" y="200" width="40" class="legend-item" height="40" fill="#0f52ba"></rect>
+        <text x="60" y="220" fill="#333">Comedy</text>
+      </g>
+      <g>
+        <rect x="10" y="240" width="40" class="legend-item" height="40" fill="goldenrod"></rect>
+        <text x="60" y="260" fill="#333">Biography</text>
+      </g>
+    </svg>
+  </body>
+  <script defer src="app.js"></script>
+</html>
